@@ -5,7 +5,7 @@ ENV REVIEWDOG_COMMIT=144be8f5064d263cdd674952163da0cebd0247d0
 ENV REVIEWDOG_VERSION=v0.10.0
 
 # Grab checkstyle
-RUN wget -O - -q https://github.com/checkstyle/checkstyle/releases/download/checkstyle-8.32/checkstyle-8.32-all.jar > /checkstyle.jar
+RUN wget -O - -q https://github.com/checkstyle/checkstyle/releases/download/checkstyle-8.33/checkstyle-8.33-all.jar > /checkstyle.jar
 
 # Grab reviewdog
 RUN wget -O - -q https://raw.githubusercontent.com/reviewdog/reviewdog/${REVIEWDOG_COMMIT}/install.sh| sh -s -- -b /usr/local/bin/ ${REVIEWDOG_VERSION}
