@@ -252,5 +252,10 @@
             <property name="exceptionVariableName" value="expected"/>
         </module>
         <module name="CommentsIndentation"/>
+        <module name="TodoComment">
+          <property name="id" value="commentStartWithSpace"/>
+          <property name="format" value="^([^\s\/*])"/>
+          <message key="todo.match" value="Comment text should start with space."/>
+        </module>
     </module>
 </module>
