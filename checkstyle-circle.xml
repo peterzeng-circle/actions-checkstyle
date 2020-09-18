@@ -5,7 +5,7 @@
 
 <!-- This file matches the Google coding convention, but is modified as follows:
    - Use 4 spaces instead of 2 spaces
-   - Set AbbreviationAsWordInName allows capitals in a row to 9 (for USDTTRONCurrency), and ignore final
+   - Set AbbreviationAsWordInName allows capitals in a row to 9 and ignore final
    - Don't require Javadocs
    - Add DeclarationOrder
    - Add UnusedImports
