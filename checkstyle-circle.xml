@@ -11,6 +11,7 @@
    - Add UnusedImports
    - Remove PLUS from operator newline required
    - Remove VariableDeclarationUsageDistance
+   - The opening and closing curly brace of an empty constructor body can be on the same line
  -->
 
 <!--
@@ -76,8 +77,13 @@
             <property name="id" value="RightCurlyAlone"/>
             <property name="option" value="alone"/>
             <property name="tokens"
-             value="CLASS_DEF, METHOD_DEF, CTOR_DEF, LITERAL_FOR, LITERAL_WHILE, STATIC_INIT,
-                    INSTANCE_INIT"/>
+             value="CLASS_DEF, METHOD_DEF, LITERAL_FOR, LITERAL_WHILE, STATIC_INIT, INSTANCE_INIT"/>
+        </module>
+        <module name="RightCurly">
+            <property name="id" value="RightCurlyAloneOrSingleLine"/>
+            <property name="option" value="alone_or_singleline"/>
+            <property name="tokens"
+             value="CTOR_DEF"/>
         </module>
         <module name="WhitespaceAround">
             <property name="allowEmptyConstructors" value="true"/>
